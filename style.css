@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+body, button, input, select, textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+}
+
+:root {
+  --background-color: rgb(233, 129, 190);
+  --dark-grey: rgb(36, 35, 35);
+  --light-grey: rgb(87, 86, 86);
+  --light-light-grey: rgb(245, 243, 243);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle-top {
+  width: 700px;
+  height: 700px;
+  background-image: url(images/bg-pattern-top.svg);
+  position: absolute;
+  top: -50%;
+  left: -5%;
+}
+
+.circle-bottom {
+  width: 700px;
+  height: 700px;
+  background-image: url(images/bg-pattern-bottom.svg);
+  position: absolute;
+  bottom: -50%;
+  right: -5%;
+}
+
+.card-container {
+  width: 400px;
+  height: 440px;
+  border-radius: 20px;
+  background-color: #fff;
+  position: relative;
+}
+
+.card-container .background-card {
+  width: 400px;
+  height: 150px;
+  border-radius: 20px 20px 0 0;
+  background-image: url(images/rm218batch6-mynt-26.jpg);
+  background-size: 400px;
+}
+
+.card-container .card-photo {
+  width: 150px;
+  height: 150px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: calc(150px - 75px);
+  left: calc(50% - 75px);
+  background-image: url(images/1566233556017.jpg);
+  background-size: 140px;
+}
+
+.card-container .card-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+}
+
+
+.card-container .card-info .name-age {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.card-container .card-info .name-age h1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-grey);
+}
+
+.card-container .card-info .name-age h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--light-grey);
+  margin-left: 15px;
+}
+
+.card-container .line {
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-light-grey);
+  margin-top: 25px;
+}
+
+.card-container .card-info h3 {
+  font-size: 15px;
+  color: var(--light-grey);
+  font-weight: 400;
+  margin: 0;
+}
+
+.card-container .card-info .info-profile {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.card-container .card-info .info-profile .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-container .card-info .info-profile .info .number {
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-grey);
+  margin: 0;
+}
+
+.card-container .card-info .info-profile .info .info-number {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--dark-grey);
+}
