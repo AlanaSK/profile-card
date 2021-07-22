@@ -140,3 +140,42 @@ body {
   font-weight: 300;
   color: var(--dark-grey);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .circle-top {
+    top: -20%;
+    left: -10%;
+  }
+  
+  .circle-bottom {
+    width: 630px;
+    height: 560px;
+    background-size: 600px;
+    background-repeat: no-repeat;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card-container {
+    width: 300px;
+  }
+
+  .card-container .background-card {
+    width: 300px;
+    height: 150px;
+    background-size: 300px;
+  }
+
+  .circle-top {
+    width: 0;
+    height: 0;
+  }
+  
+  .circle-bottom {
+    width: 0;
+    height: 0;
+  }
+
+}
